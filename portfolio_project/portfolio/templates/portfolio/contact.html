@@ -1,0 +1,15 @@
+{% extends 'portfolio/base.html' %}
+
+{% block title %}Связаться со мной{% endblock %}
+
+{% block content %}
+    <h1>Связаться со мной</h1>
+    <p>Отправьте мне email на <strong>kislyakov84@yandex.ru</strong></p>
+    <form action="#" method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Ваше имя" required><br><br>
+        <input type="email" name="email" placeholder=Ваш Email" required><br><br>
+        <textarea name="message" placeholder="Сообщение" required></textarea><br><br>
+        <button type="submit">Отправить сообщение</button>
+    </form>
+{% endblock %}
