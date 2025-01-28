@@ -1,0 +1,46 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block title %}Обо мне{% endblock %}
+
+{% block content %}
+    <section class="about-section">
+        <h1>Обо мне</h1>
+        <p>Hello! I'm a passionate Python developer with a keen interest in web development and machine learning.</p>
+        
+        <h2>Опыт работы</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>Python Developer</h3>
+                <p>Company XYZ, 2023 - Present</p>
+                <p>Developing scalable web applications with Django and FastAPI.</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>Backend Developer</h3>
+                <p>Company ABC, 2021 - 2023</p>
+                <p>Worked on API integrations and cloud solutions.</p>
+            </div>
+        </div>
+
+        <h2>Навыки</h2>
+        <div class="skills">
+            <div class="skill" data-aos="fade-right">
+                <span>Python</span>
+                <div class="progress"><div style="width: 90%;"></div></div>
+            </div>
+            <div class="skill" data-aos="fade-right">
+                <span>Django</span>
+                <div class="progress"><div style="width: 85%;"></div></div>
+            </div>
+            <div class="skill" data-aos="fade-right">
+                <span>JavaScript</span>
+                <div class="progress"><div style="width: 70%;"></div></div>
+            </div>
+        </div>
+
+        <div class="resume">
+            <a href="{% static 'files/resume.pdf' %}" download class="btn">Скачать резюме</a>
+        </div>
+    </section>
+{% endblock %}
